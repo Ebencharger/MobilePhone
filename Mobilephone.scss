@@ -1,0 +1,1205 @@
+.container-fluid, .row, .col-sm{
+    padding: 10px;
+    margin: 0px;
+}
+.phoneBody{
+    width: 25%;
+    height: 600px;
+    background-color: black;
+    animation-name: eben;
+    animation-duration: 1s;
+    border-radius: 20px;
+    overflow-y: hidden;
+    .camlight{
+    width: 100%;
+    height: 10px;
+    padding: 30px;
+        .cam{
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: rgb(243, 236, 174);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .caminner{
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            background-color: rgb(202, 201, 248); 
+        }
+        }
+        .light{
+       @extend .cam;
+       margin-left: 20px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       .lightinner{
+        width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            background-color: rgb(202, 201, 248); 
+    }
+        }
+    }
+    .screen{
+        width: 100%;
+        height: 530px;
+        overflow: hidden;
+        animation-name: eben;
+        animation-delay: 1s;
+        .wallpaper{
+            margin-top: -10px;
+            width:100%;
+            height: 470px;
+        }
+        .ssaver{
+         overflow: hidden;
+        .screensaver{
+            margin-top: -10px;
+            width:100%;
+            height: 470px;
+        }
+    }
+    }
+    #minim{
+        padding: 30px;
+        position: absolute !important;
+        top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+        z-index: 9000;
+        width: 24.5%;
+        height: 470px;
+    }
+    #faint{
+        position: absolute;
+        top: 60px;
+        z-index: 10000;
+        width: 24.5%;
+        height: 470px;
+        background-color:  rgba(0, 0, 0, 0.4);
+    }
+    #Menu{
+        position: absolute;
+        top: 60px;
+        display: flex;
+        overflow-x: hidden;
+        z-index: 95000;
+        width: 24.5%;
+        height: 470px;
+        background-color:  rgba(0, 0, 0, 0.4);
+        div{
+            margin-left: -20px;
+            flex-wrap: wrap;
+            overflow: scroll;
+           }
+        i{
+            margin-top: 10px;
+            font-size: 30px;
+            margin-left: 30px;
+            background-color: white;
+            width: 50px;
+            height: 50px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .slide{
+        position: absolute;
+        margin-top: -200px;
+        padding-left: 15px;
+        font-size: 18px;
+        text-shadow: 0px 0px 4px white;
+        color: black;
+        font-weight: bold;
+    }
+
+    @keyframes eben{
+        0%{
+         opacity: 0;
+        }
+    }
+    
+  
+    .finger{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        position: absolute;
+        top: 550px;
+        left: 152px;
+        animation-name: eben;
+        animation-duration: 3s;
+        background-color: white;
+        overflow: hidden;
+        .line{
+            border: none;
+            margin-left: 30px;
+            border-left: 1px solid black;
+            width: 10px;
+            height: 40px;
+            transition: all 3s;
+            animation-name: eben;
+            animation-delay: 3s;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        .line2{
+            border: none;
+            margin-left: 10px;
+            border-left: 1px solid black;
+            width: 10px;
+            height: 40px;
+            transition: all 3s;
+            animation-name: eben;
+            animation-delay: 3s;
+            margin-top: -40px;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+    }
+}
+
+
+.phoneBack{
+    width: 25%;
+    height: 600px;
+    background-color: rgb(100, 165, 100);
+    border-radius: 20px;
+    margin-left: 80px;
+    .camback{
+        height: 80px;
+        width: 100px;
+        position: absolute;
+        left: 35%;
+        top: 40px;
+        .camback1, .camback2{
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-shadow: 30px 0px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .lightback{
+                width: 10px;
+                height: 10px;
+                background-color: rgba(255, 255, 255, 0.4);
+                border-radius: 100%;
+                box-shadow: 30px 0px 0px rgba(255, 255, 255, 0.4);
+            }
+        }
+    }
+    .label{
+        width: 100px;
+        height: 80px;
+        text-align: center;
+        background-color: white;
+        position: absolute;
+        top: 260px;
+        margin-left: 110px;
+    }
+}
+.bob{
+    width: 25%;
+    height: 600px;
+    margin-left: 100px;
+}
+
+button{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.Pbutton{
+position: absolute;
+left: 25.3%;
+margin-top: 60px;
+.volumeup, .volumedown, .lock{
+    width: 5px;
+    height: 40px;
+    background-color: black;
+    margin-bottom: 3px;
+}
+.lock{
+    margin-top: 20px;
+}
+}
+
+#list{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    margin-left: 140px;
+    margin-top:40px;
+    z-index: 15000;
+    #N11, #N21{
+    border:none;
+    border-left: 2px solid black;
+    height: 6px;
+    }
+    #N12, #N22{
+    border:none;
+    border-left: 2px solid black;
+    height: 8px;
+    margin-left: 2px;
+    margin-top: -2px;
+    }
+    #N13, #N23{
+    border:none;
+    border-left: 2px solid black;
+    height: 10px;
+    margin-left: 2px;
+    margin-top: -4px;
+    }
+    #N14, #N24{
+    border:none;
+    border-left: 2px solid black;
+    height: 12px;
+    margin-left: 2px;
+    margin-top: -6px;
+    }
+    #time{
+        position: absolute;
+        margin-top: -10px;
+        margin-left: 80px;
+    }
+}
+.barS2{
+    margin-left: 10px;
+}
+
+.ba3{
+    margin-left: 10px;
+.enter{
+    border:none;
+    border-left: 2px solid black;
+    height: 6px; 
+}
+#cell{
+    border: 1px solid black;
+    height: 13px;
+    border-radius: 3px;
+    width: 27px;
+    margin-top: -4.5px;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+}
+
+// #homescreen1{
+
+// }
+
+#homescreen{
+.menu{
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: -60px;
+    font-size: 35px;
+    display: none;
+}
+}
+
+#offit{
+    position: fixed;
+    background-color: white;
+    z-index: 11000;
+    animation-name: eben;
+    animation-duration: 1s;
+    transition: all 2s;
+    width: 13%;
+    margin-left: 5%;
+    padding: 10px;
+    margin-top: 80px;
+
+    p{
+        margin-top: -3px;
+        margin-left: 5px;
+    }
+}
+
+#start, #stop{
+margin-top: 200px;
+margin-left: 30px;
+animation-name: eben;
+animation-duration: 4s;
+transition: all 3s;
+}
+
+
+
+#fullday{
+    position: absolute;
+    z-index: 10000;
+    margin-top: -150px;
+    text-shadow: 0px 0px 4px white;
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#contact{
+    width: 100%;
+    height: 450px;
+    overflow-y: scroll;
+    text-align: justify;
+    padding: 10px;
+    animation-name: eben;
+    background-color: white;
+}
+
+#keypad{
+    position: fixed;
+    z-index: 3000;
+    margin-top: 150px;
+    height: 290px;
+    transition: all 1s;
+    animation-name: eben;
+    animation-duration: 2s; 
+    width: 23.8%;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    button{
+        margin-left: 20px;
+        width: 70px;
+        margin-bottom: 0px;
+        transition: all 1s;
+        animation-name: eben;
+        animation-duration: 3s; 
+        line-height: 20px;
+        margin-top: 25px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 30px;
+    }
+}
+#keypadword{
+    position: fixed;
+    z-index: 25000;
+    margin-top: 231px;
+    height: 220px;
+    padding-top: 4px;
+    overflow: hidden;
+    transition: all 1s;
+    animation-name: eben;
+    animation-duration: 2s; 
+    width: 23.8%;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    button{
+        margin-left: 10px;
+        width: 20px;
+        margin-bottom: 0px;
+        transition: all 1s;
+        animation-name: eben;
+        animation-duration: 3s; 
+        line-height: 10px;
+        margin-top: 15px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 20px;
+    }
+}
+#newpadword{
+    position: fixed;
+    z-index: 20000;
+    margin-top: 231px;
+    height: 220px;
+    padding-top: 4px;
+    overflow: hidden;
+    transition: all 1s;
+    animation-name: eben;
+    animation-duration: 2s; 
+    width: 23.8%;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    button{
+        margin-left: 10px;
+        width: 20px;
+        margin-bottom: 0px;
+        transition: all 1s;
+        animation-name: eben;
+        animation-duration: 3s; 
+        line-height: 10px;
+        margin-top: 15px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 20px;
+    }
+}
+.header{
+position: fixed;
+z-index: 9000;
+color: black;
+width: 23.9%;
+left: 30px;
+margin-top: -3px;
+height: 102px;
+
+.sear{
+    margin-top: 5px;
+background: white;
+padding: 5px;
+border-radius: 50px;
+
+input{
+background: transparent;
+border: none;
+outline: 0px;
+&::placeholder{
+    color: black;
+}
+}
+}
+}
+#line{
+position: absolute;
+width: 60px;
+border: none;
+border-bottom: 2px solid white;
+height: 20px;
+margin-top: 5px;
+margin-left: -5px;
+animation-name: eben;
+animation-duration: 3s;
+transition: all 1s;
+}
+
+#control{
+        width: 24%;
+        position: absolute;
+        top: 535px;
+        padding: 10px;
+        left: 13px;
+        animation-name: eben;
+        animation-duration: 1s;
+}
+
+
+#contactdown{
+    margin-top: 90px;
+    transition: all 1s;
+    animation-name: eben;
+    animation-duration: 1s; 
+}
+
+#callsusp{
+    position: fixed;
+    background-color: rgb(39, 105, 247);
+    width: 50px;
+    height: 50px;
+    z-index: 7000;
+    margin-left: 240px;
+    margin-top: -60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    i{
+        font-size: 16px;
+        color: white;
+    }
+}
+#call1susp{
+    position: fixed;
+    background-color: rgb(39, 247, 108);
+    width: 50px;
+    height: 50px;
+    z-index: 7000;
+    margin-left: 240px;
+    margin-top: -60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    i{
+        font-size: 16px;
+        color: white;
+    }
+}
+
+#contactsusp{
+    position: fixed;
+    background-color: rgb(39, 105, 247);
+    width: 50px;
+    height: 50px;
+    z-index: 7000;
+    margin-left: 240px;
+    margin-top: -60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    i{
+        font-size: 16px;
+        color: white;
+    }
+}
+.nav{
+    button{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        margin-top: 2px;
+        margin-left: -5px;
+        color: white;
+    }
+}
+#callplate{
+    position: absolute;
+    border: none;
+    outline: none;
+}
+
+#callplate::-webkit-scrollbar{
+    display: none;
+}
+
+#sicall{
+    width: 280px;
+    height: 150px;
+    z-index: 120000;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    transition: all 1s;
+        animation-name: eben;
+        animation-duration: 1s; 
+    left: 30px;
+    margin-top: 150px;
+    text-align: center;
+    padding: 10px;
+}
+
+#recharge{
+    width: 280px;
+    height: 150px;
+    z-index: 120000;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    transition: all 1s;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+        animation-name: eben;
+        animation-duration: 1s; 
+    left: 30px;
+    margin-top: 150px;
+    text-align: center;
+    padding: 10px;
+
+    button{
+        position: absolute;
+        margin-top: 110px !important;
+        background-color: black;
+        border: none;
+        outline: none;
+        color: white;
+    }
+}
+
+.sim1, .sim2{
+margin-left: 20px;
+}
+#simname1, #simname2{
+    margin-left: 20px;
+}
+#number{
+    margin-top: -20px;
+    margin-left: -65px;
+}
+
+.tag{
+    color: white;
+    width: 20px;
+    border-top-left-radius: 10px;
+}
+
+
+.callhead{
+    position: fixed;
+    z-index: 11000;
+    color: black;
+    width: 23.9%;
+    left: 30px;
+    margin-top: -3px;
+    height: 300px;
+    text-align: center;
+    p{
+        line-height: 10px;
+    }
+    }
+
+    .usercall{
+        margin-left: 28%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        transition: all 1s;
+        animation-name: eben;
+        animation-duration: 1s; 
+        height: 140px;
+        border-radius: 100%;
+        background-color: white;
+        i{
+            font-size: 50px;
+        }
+    }
+
+    .callicon{
+        background-color: rgb(255, 255, 255);
+        width: 327px;
+        height: 153px;
+        z-index: 12000;
+        position: absolute;
+        transition: all 1s;
+        animation-name: eben;
+        animation-duration: 3s;
+       margin-top: 297px;
+    }
+    
+    .lisico{
+        width: 200px;
+        margin-left: 17%;
+        margin-top: 30px;
+        padding: 4px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 100px;
+    }
+    .callred{
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        border-radius: 100%;
+        color: white;
+        margin-top: -20px;
+    }
+    .callduration{
+        position: absolute;
+        margin-left: 140px;
+    }
+#callDur{
+    transition: all 1s;
+        animation-name: eben;
+        animation-duration: 1s;
+}
+
+.userA{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(35, 130, 240);
+    border-radius: 100%;
+    color: white;
+    font-size: 22px;
+}
+
+.together{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -10px;
+    padding-right: 20px;
+}
+
+#smcode{
+    color: white;
+    width: 15px;
+    height: 20px;
+    border-top-left-radius: 10px;  
+    background-color: rgb(240, 175, 35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#smcode1{
+    color: white;
+    width: 15px;
+    height: 20px;
+    border-top-left-radius: 10px;  
+    background-color: rgb(240, 76, 35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simde{
+margin-top: 10px !important;
+font-size: 10px;
+width: 15px;
+height: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid gray;
+border-radius: 100%;
+}
+
+.calhis{
+    margin-top: -34px;
+    display: flex;
+}
+
+#arrow{
+    color: green;
+    transform: rotate(10deg);
+    margin-top: 5px;
+}
+
+#but{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-bottom: -5px;
+    line-height: -10px;
+    margin-top: -10px;
+}
+
+#tome{
+    margin-top: -22px;
+    margin-left: -0px;
+    color: red;
+}
+#tome1{
+    margin-top: -27px !important;
+    margin-left: -0px;
+    color: blue;
+}
+#time2{
+    margin-top: -22px;
+    margin-left: -0px;
+    color: green;
+}
+
+#okay{
+    margin-top: 20px;
+}
+
+#callinfoB{
+    height: 70px;
+#callinfo{
+    height: 450px;
+    background-color: white;
+    width: 100%;
+    color: black; 
+    padding-top: 120px; 
+    padding-left: 10px; 
+    padding-right: 15px;
+    p{
+     line-height: 10px;
+    }
+    .img{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    background-color: rgb(35, 130, 240);
+    border-radius: 100%;
+    color: white;
+    font-size: 22px;
+    }
+}
+}
+
+
+
+#startt{
+   animation-name: eben;
+   animation-delay: 3s;
+   transition: 2s all;
+}
+
+
+#contactinfoB{
+    .contH{
+        height: 150px !important;
+        .biguser{
+        margin-left: 39%;
+        font-size: 90px;
+        color: rgba(255, 255, 255, 0.2);
+        }
+    }
+ #contactinfo{
+    height: 300px;
+    background-color: white;
+    width: 100%;
+    color: black; 
+    padding-top: 20px; 
+    padding-left: 10px; 
+    padding-right: 0px;
+    p{
+     line-height: 10px;
+    }
+ }
+  }
+ .Mycontname{
+    font-size: 34px;
+    margin-left: 30px;
+    margin-top: -80px;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+    position: absolute;
+ }
+ .twofa{
+    margin-left: 250px;
+    margin-top: -60px;
+    color: white;
+    position: absolute;
+}
+.famessage{
+    margin-left: 100px !important;
+   }
+  .volume{
+    width: 321px;
+    height: 50px;
+    margin-top: -5px;
+    position: absolute;
+    z-index: 18000;
+    animation-name: volume;
+    animation-duration: 3s;
+    transition: all 3s;
+    .level{
+        height: 25px;
+        border: none;
+        border-bottom: 2px solid white;
+        .volumec{
+            width: 20px;
+            position: absolute;
+            margin-left: 302px;
+            margin-top: 13px;
+            height: 20px;
+            border-radius: 100%;
+            background-color: white;
+        }
+    }
+}
+   @keyframes volume{
+    0%{
+        opacity: 0;
+    }
+     }
+
+
+   #messageHome{
+    .contH{
+        height: 80px !important;
+        .biguser{
+        margin-left: 39%;
+        font-size: 90px;
+        color: rgba(255, 255, 255, 0.2);
+        }
+    }
+ #messageinfo{
+    height: 370px;
+    background-color: white;
+    width: 100%;
+    overflow-y: scroll;
+    color: black; 
+    padding-top: 20px; 
+    padding-left: 10px; 
+    padding-right: 0px;
+    p{
+     line-height: 10px;
+    }
+  }
+}
+
+ .fapluss{
+     position: absolute;
+     font-size: 13px;
+     margin-top: 7px;
+     margin-left: -4px;
+   }
+
+ 
+
+   #messagetype{
+    .contH{
+        height: 80px !important;
+        .biguser{
+        margin-left: 39%;
+        font-size: 90px;
+        color: rgba(255, 255, 255, 0.2);
+        }
+    }
+ #messageTyinfo{
+    height: 370px;
+    background-color: white;
+    width: 100%;
+    position: relative;
+    overflow-y: scroll;
+    color: black; 
+    padding-top: 20px; 
+    padding-left: 10px; 
+    padding-right: 0px;
+    p{
+     line-height: 10px;
+    }
+ }
+ }
+
+ .messcont{
+ line-height: 20px;
+ }
+
+ #messageMy{
+    outline: none;
+    margin-top: 10px;
+    height: 30px;
+    resize: none;
+ }
+ .placeholder{
+     position: absolute;
+     margin-left: 35px;
+     margin-top: 20px;
+ }
+ .messageButtom{
+position: fixed;
+height: 50px;
+z-index: 14000;
+width: 22.5%;
+margin-top: -20px;
+margin-left: -10px;
+top: 510px;
+ }
+
+ #sendMessage{
+     font-size: 25px;
+     transform: rotate(20deg);
+     margin-right: 10px;
+ }
+
+ #themessage{
+   width: 260px;
+   display: flex;
+   margin-bottom: 40px;
+   position: relative;
+   padding: 8px;
+   margin-left: 20px;
+   text-justify: newspaper;
+   text-align: justify;
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+ }
+
+ #Isentday{
+    position: absolute;
+    margin-left: 130px;
+    margin-top: -26px;
+    font-weight: bold;
+    background-color: white;
+ }
+
+ .notsent{
+     color:red;
+     font-weight: bold;
+ }
+ .sent{
+     color:rgb(30, 177, 30);
+     font-weight: bold;
+ }
+   #newmessagetype{
+    .contH{
+        height: 80px !important;
+        .biguser{
+        margin-left: 39%;
+        font-size: 90px;
+        color: rgba(255, 255, 255, 0.2);
+        }
+    }
+ #messageTyinfo{
+    height: 370px;
+    background-color: white;
+    width: 100%;
+    position: relative;
+    overflow-y: scroll;
+    color: black; 
+    padding-top: 20px; 
+    padding-left: 10px; 
+    padding-right: 0px;
+    p{
+     line-height: 10px;
+    }
+ }
+ }
+
+ .messcont{
+ line-height: 20px;
+ }
+
+ #newmessageMy{
+    outline: none;
+    margin-top: 10px;
+    height: 30px;
+    resize: none;
+ }
+ .placeholder{
+     position: absolute;
+     margin-left: 35px;
+     margin-top: 20px;
+ }
+ #newmessagebtn{
+position: fixed;
+height: 50px;
+z-index: 14000;
+width: 22.5%;
+margin-top: -20px;
+margin-left: -10px;
+top: 510px;
+ }
+
+ #sendMessage{
+     font-size: 25px;
+     transform: rotate(20deg);
+     margin-right: 10px;
+ }
+
+ #themessage{
+   width: 260px;
+   display: flex;
+   margin-bottom: 40px;
+   position: relative;
+   padding: 8px;
+   margin-left: 20px;
+   text-justify: newspaper;
+   text-align: justify;
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+ }
+
+ #Isentday{
+    position: absolute;
+    margin-left: 130px;
+    margin-top: -26px;
+    font-weight: bold;
+    background-color: white;
+ }
+
+ .notsent{
+     color:red;
+     font-weight: bold;
+ }
+ .sent{
+     color:rgb(30, 177, 30);
+     font-weight: bold;
+ }
+
+#Editme{
+    position: absolute;
+    margin-top: 50px;
+}
+#selectsim{
+    margin-left: -60px;
+    margin-top: 50px;
+
+}
+#password{
+    transition: opacity 2s;
+    animation-name: eben;
+    animation-duration: 2s;
+    position: absolute;
+    margin-top: 200px;
+    input, div{
+        outline: none;
+        border: 1px solid blue;
+    }
+}
+//  .miniapp{
+// position: absolute;
+// width: 180px;
+// min-height: 20px !important;
+// margin-top: 60px;
+// margin-left:5% ;
+// #messageinfo{
+//     height: 70px !important;
+//     background-color: white;
+//     overflow-y: scroll;
+//     color: black; 
+//     padding-top: 20px; 
+//     padding-left: 10px; 
+//     padding-right: 0px;
+//     p{
+//      line-height: 10px;
+//     }
+//   }
+//  }
+//  .miniap{
+// position: absolute;
+// z-index: 7000 !important;
+// overflow-y:scroll;
+// display: flex;
+
+// width: 180px !important;
+// height: 160px !important;
+// min-height: 160px !important;
+// margin-top: 120px;
+// margin-left:5% ;
+//  }
+
+//  .mini{
+//     position: absolute;
+//     z-index: 22000 !important;
+//     overflow-y:scroll;
+//     display: flex;
+//     width: 180px !important;
+//     height: 160px !important;
+//     min-height: 160px !important;
+//     margin-top: 190px;
+//     margin-left:5% ;
+//     .header{
+//         position: fixed;
+//         z-index: 22000 !important;
+//         color: black;
+//         width: 180px;
+//         left: 7.1%;
+//         margin-top: -3px;
+//         height: 82px;
+        
+//         .sear{
+//             margin-top: 5px;
+//         background: white;
+//         padding: 5px;
+//         border-radius: 50px;
+        
+//         input{
+//         background: transparent;
+//         border: none;
+//         outline: 0px;
+//         &::placeholder{
+//             color: black;
+//         }
+//         }
+//         }
+//         }
+//      }
+ 
+ 

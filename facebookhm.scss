@@ -1,0 +1,1275 @@
+.container-fluid, .row, .col-sm{
+padding: 0px;
+margin: 0px;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    z-index: 11000;
+}
+
+.nav-brand i{
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    padding-left: 0px;
+font-size: 35px;
+justify-content: center;
+}
+.nav-brand{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+.infop:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.covinfo, .users, .gr,.tel, .cal, .mem,.book, .flag, .brief{
+    @extend .infop;
+}
+
+.foot:hover a{
+    display: flex !important;
+}
+
+
+
+.ser{
+    margin-left: 10px;
+    width: 250px;
+    border-radius: 15px;
+    height: 40px;
+    background-color: #F0F2F5;
+    padding: 10px;
+}
+.x-sf{
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+}
+
+.x-tab i{
+    font-size: 25px;
+    margin-left: 35px;
+}
+
+.x-tab .nav{
+    border: 0px;
+    outline: none;
+    position: absolute;
+    left: 34%;
+}
+
+
+.x-tab, .xnav-tabs {
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.xactive{
+    border-bottom: 3px solid rgb(57, 127, 231);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item:hover .toolt{
+    display: inherit;
+}
+
+.toolt{
+    width: 60px;
+    height: 30px;
+    background-color: rgb(19, 18, 18);
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    z-index: 7000;
+    color: white;
+    padding: 5px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    display: none; 
+}
+
+
+
+.x-user{
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 4px;
+}
+
+
+.x-fa .nav-link{
+margin-left: 20px;
+margin-top: 10px;
+}
+
+.cl i{
+
+font-size: 20px;
+}
+
+.x-sf::placeholder{
+    padding-left: 10px;
+}
+
+.eben{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.th i{
+    font-size: 20px;
+}
+.th{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mh i{
+    font-size: 20px;
+}
+.mh{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bell i{
+    font-size: 20px;
+}
+.bell{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caret i{
+    font-size: 20px;
+}
+.caret{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x-bod{
+    width: 100%;
+    background-color: #F0F2F5;
+    border-radius: 0px;
+    border: 0px;
+    outline: none;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.leftpane{
+ overflow-y: scroll;
+ position: fixed;
+ left: 0%;
+ height: 700px;
+
+}
+.cpane{
+position: relative;
+margin-top: 10px;
+left: 25%;
+}
+
+.flx{
+    width: 100%;
+}
+
+.flx div{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 17%;
+    height: 180px;
+    min-width: 17%;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    transition: all 0.5s;
+
+    img{
+      margin-top: -10px;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: -10px;
+        height: 130px;
+        width: 100%;
+        min-width: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        height: 40px;
+        width: 40px;
+        min-width: 40px;
+        background: rgb(57, 127, 231);
+        border-radius: 100%;
+        border: 4px solid white;
+    }
+
+    &:hover::after{
+     background-color: rgba(0, 0, 0, 0.4);;
+    }
+}
+
+.eben::before{
+    content: "+" !important;
+    color: white;
+    font-size: 30px;
+    top: 100px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.eben:hover::after{
+   height: 110%;
+}
+
+
+.otheron::before{
+    background-color: transparent !important;
+    background-image: url("eben.jpg") !important;
+    background-size: 30px !important;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    top: 20px !important;
+    border: 4px solid rgb(57, 127, 231) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+@mixin  otherwe() {
+    &::after{
+        height: 110% !important;
+    }
+    
+}
+
+.otheron{
+    @include otherwe();
+}
+
+.othertw{
+    @include otherwe();
+    
+}
+
+.otherthr{
+    @include otherwe();
+}
+
+.otherfour{
+    @include otherwe();
+}
+
+.othertw::before{
+    background-color: transparent !important;
+    background-image: url("Ebencharger.jpg") !important;
+    background-size: 40px !important;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    top: 20px !important;
+    border: 4px solid rgb(57, 127, 231) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.otherthr::before{
+    background-color: transparent !important;
+    background-image: url("Josh.jpg") !important;
+    background-size: 40px !important;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    top: 20px !important;
+    border: 4px solid rgb(57, 127, 231) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.otherfour::before{
+    background-color: transparent !important;
+    background-image: url("images.jpg") !important;
+    background-size: 40px !important;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    top: 20px !important;
+    border: 4px solid rgb(57, 127, 231) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.xtext-white{
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-left: -25px;
+    margin-top: 50px;
+}
+
+.rpane{
+    position: fixed;
+    left: 75%;
+    height: 700px;
+    overflow-y: scroll;
+}
+
+
+
+.leftpane::-webkit-scrollbar-track{
+  border-radius: 20px;
+}
+
+.infop{
+    margin-bottom: 10px;
+}
+
+
+.infop img{
+    border-radius: 100%;
+}
+
+.covinfo{
+    margin-bottom: 10px;
+}
+.eb:hover{
+ border-radius: 20px;
+}
+.cv{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: purple;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.users i{
+    font-size: 20px;
+    color: rgb(17, 144, 248);
+}
+
+.x-bod p{
+    margin-left: 6px;
+
+}
+
+.users{
+    margin-left: 7px;
+}
+.users p{
+    margin-top: -2px;
+    padding-left: 13px !important;
+}
+
+.mov{
+    margin-top: -15px;
+    margin-left: 40px;
+}
+
+.movu{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(17, 144, 248);
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.tel{
+   color: black;
+   margin-left: 4px;
+   margin-bottom: 10px;
+}
+
+.mov{
+    margin-top: 30px;
+    margin-left: -50px;
+}
+
+.tel i{
+    font-size: 20px;
+    color: rgb(17, 144, 248);
+}
+
+.cal{
+    color: black;
+    margin-left: 5px;
+    margin-bottom: 10px;
+ }
+ 
+ .cal i{
+     font-size: 20px;
+     color: red;
+ }
+
+ .mem{
+    color: black;
+    margin-left: 5px;
+    margin-bottom: 10px;
+ }
+ 
+ .mem i{
+     font-size: 20px;
+     color: rgb(17, 144, 248);
+ }
+
+ .book{
+    color: black;
+    margin-left: 6px;
+    margin-bottom: 10px;
+ }
+ 
+ .book i{
+     font-size: 20px;
+     color:purple;
+ }
+
+ .flag{
+    color: black;
+    margin-left: 4px;
+ }
+ 
+ .flag i{
+     font-size: 20px;
+     color:rgb(238, 75, 11);
+ }
+
+ .brief{
+    color: black;
+    margin-left: 4px;
+ }
+ 
+ .brief i{
+     font-size: 20px;
+     color:rgb(189, 122, 96);
+ }
+
+ .seem{
+     width: 30px;
+     height: 30px;
+     border-radius: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: grey;
+ }
+
+ .ch{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: rgb(207, 203, 207);
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot{
+ margin-bottom: 30px;
+ height: 250px;
+}
+
+.x-carone{
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 120px;
+    width: 75%;
+    min-width: 75%;
+    border-radius: 10px;
+}
+
+.imgpost{
+    height: 40px;
+    width: 45px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inppost{
+    outline: none;
+    border: 0px;
+    background-color: transparent;
+    width: 100%;
+    font-size: 17px;
+    &::placeholder{
+        background-color: transparent;
+    }
+   
+}
+
+.postser{
+    background-color: #E4E6E9;
+    margin-left: 20px;
+    padding: 2px;
+    padding-left: 10px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 20px;
+&:hover{
+background-color: rgba(0, 0, 0, 0.2);
+}
+}
+
+.posfa{
+    margin-top: -8px;
+  i{
+    font-size: 25px; 
+    color: red; 
+  }
+}
+
+.smi{
+    font-size: 25px;
+    margin-top: -8px;
+}
+
+
+.liv:hover{
+background-color: rgba(0, 0, 0, 0.1);
+height: 30px;
+}
+
+.pho, .smiley{
+    @extend .liv;
+}
+
+.crearoom{
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 70px;
+    width: 75%;
+    min-width: 75%;
+    border-radius: 10px;
+}
+
+.postone{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 75%;
+    min-width: 75%;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+.posttwo, .postthree, .postthree, .postfour{
+    @extend .postone;
+}
+
+.crearoom{
+    
+    i{
+        font-size: 20px;
+        color: purple;
+        margin-top: 1px;
+    }
+
+    .roomf{
+        width: 140px;
+        height: 40px;
+        padding-top: 10px;
+        padding-left: 10px;
+        border: 1px solid skyblue;
+        border-radius: 20px;
+        p{
+            margin-left: 5px;
+            margin-top: -2px;
+        }
+
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+
+.roomimage{
+    display: flex;
+    margin-right: 50px;
+    .rmigone{
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+    }
+    
+
+
+
+}
+
+.rmhold{
+    position: relative;
+    &:hover .tool{
+   display: inherit;
+    }
+
+}
+
+.tool{
+width: 150px;
+height: 50px;
+background-color: rgb(19, 18, 18);
+position: absolute;
+left: -30px;
+top: 50px;
+z-index: 3000;
+color: white;
+padding-left: 5px;
+display: none;
+}
+
+.modal-content{
+    position: absolute;
+    z-index: 6000;
+    margin-top: 50px;
+}
+
+.ebenmod{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.fapub{
+    margin-left: 45px;
+    margin-top: -13px;
+    width: 90px;
+    padding-left: 10px;
+    padding-top: 5px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #E4E6EB;
+    p{
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: -3px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+
+
+.pos{
+     height: 100px;
+     background-color: transparent;
+     outline: none;
+     border: 0px;
+     padding-left: 0px;
+    .txtarea{
+        width: 100%;
+        height: 100px;
+        border: 0px;
+        outline: none;
+        background-color: transparent;
+        resize:none;
+    }
+.posinp{
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    margin-left: -10px;
+    padding-left: 15px;
+}
+
+&:focus-within .posinp{
+display: none;
+}
+
+}
+
+.nem{
+    div{
+        width: 30px;
+        height: 30px;
+        background: linear-gradient(red, yellow, green);
+        color: white;
+        text-shadow: 0px 0px 4px black;
+        padding-left: 4px;
+    }
+}
+
+.add{
+    border: 1px solid rgb(66, 65, 65);
+    padding-left: 15px;
+}
+
+.posbut{
+    margin-top: 20px;
+}
+
+.x-fafa{
+    margin-top: 5px;
+    div{
+    margin-left: 10px;
+    }
+}
+
+.modal-title{
+    padding-left: 190px;
+}
+
+.posoe{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.psp{
+    height: 20px;
+    .mk{
+        font-weight: bold;
+        min-width: 150px;
+        margin-left: -15px;
+    }
+}
+
+.mike{
+    margin-left: 50%;
+    margin-top: 15px;
+}
+
+.fih{
+margin-left: 40px;
+margin-top: 2px;
+}
+
+.tct{
+    margin-left: -50px;
+    margin-top: -17px;
+    padding-left: 10px;
+    .glo{
+       width: 90%;
+       margin-top: -20px;
+       margin-left: 30px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+
+    .seemore:active .x-glo{
+       display: flex;
+    }
+    .seemore:active .card-link{
+     display: none;
+    }
+    .x-glo{
+        margin-top: 0px !important;
+        display: none;
+    }
+}
+
+.fali{
+    i{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(48, 48, 241);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    }
+}
+
+.rpane{
+    .nav{
+        flex-wrap: wrap;
+    }
+
+    img{
+       @extend .posoe;
+    }
+
+    .d-flex::after{
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 6px;
+        border-radius: 100%;
+        background-color: green;
+        margin-left: 32px;
+        margin-top: 30px;
+       }
+
+    p{
+        padding-left: 10px;
+        padding-top: 7px;
+    }
+}
+
+.d-flex{
+
+    &:hover .floa{
+        display: inherit;
+    }
+.floa{
+width: 300px;
+border-radius: 10px;
+background-color: rgb(247, 247, 247);
+position: relative;
+left: -150px;
+top: -10px;
+z-index: 3000;
+color: rgb(0, 0, 0);
+padding-left: 5px;
+display: none; 
+    }
+}
+.faside{
+    i{
+      margin-left: 30px;  
+    }
+}
+
+.pencil{
+width: 50px;
+ height: 50px;
+ border-radius: 100%;
+ display: flex;
+justify-content: center;
+align-items: center;
+background-color: white;
+position: fixed;
+top: 550px;
+right: 70px;
+z-index: 4000;
+}
+
+.action{
+    position: absolute;
+    right: 0%;
+    top: 60px;
+    width: 100%;
+    height: 800px;
+    display: none;
+
+    .action1{
+overflow-y: scroll;
+position: fixed;
+left: 0%;
+height: 700px;   
+    }
+
+    .action2{
+        display: block;
+        position: fixed;
+        left: 75%;
+        height: 700px;
+        overflow-y: scroll;
+    }
+}
+
+.dont{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:1306px){
+    .x-tab .nav{
+        left: 24%;
+    }
+    .xaction:focus-within .action{
+        display: inherit;
+    }
+  .action2 .d-flex p{
+      margin-left: 20px;
+  }
+    .action2 img{
+      min-width: 20px;
+      max-height: 20px;
+      border-radius: 100%;
+    }
+
+
+    .roomimage{
+        overflow-x: scroll;
+        width: 50%;
+        padding-bottom: 50px;
+    }
+    .ser{
+        width: 40px;
+        border-radius: 100%;
+        margin-top: 5px;
+    }
+
+    .x-sf::placeholder{
+        visibility: hidden;
+    }
+
+    .ser input{
+        display: none;
+    }
+
+    .ser:hover {
+        position: absolute;
+        z-index: 2000;
+        margin-left: 60px;
+        width: 280px;
+        display: flex;
+        border-radius: 15px;
+    }
+
+    .ser:hover input{
+        display: inherit;
+        padding: 10px;
+    }
+
+    .ser:hover .x-sf::placeholder{
+        visibility: visible;
+    }
+ .leftpane{
+     display: none;
+ }
+
+ .rpane{
+    display: none;
+}
+
+.cpane{
+    left:30%
+}
+.flx{
+   position: absolute;
+    margin-left: -15px;
+    overflow-x: scroll;
+}
+ .flx div{
+     min-width: 25%;
+     margin-bottom: 10px;
+ }
+.x-carone{
+    margin-top: 200px;
+    width: 100%;
+    margin-left: -5px;
+
+    i, .smi{
+        font-size: 16px;
+    }
+
+    .pho{
+       display: none;
+    }
+
+    .smiley{
+        margin-top: -2px;
+        height: 30px;
+        padding: 5px;
+        p{
+            margin-top: -4px;
+        }
+    }
+
+    p{
+        font-size: 10px;
+    }
+}
+
+.crearoom{
+    width: 100%;
+    margin-left: -2px;
+}
+
+.postone{
+    width: 100%;
+    min-width: 100%;
+    margin-left: -0px
+}
+
+.posttwo, .postthree, .postthree, .postfour{
+    @extend .postone;
+}
+ .modal-title{
+     padding: 0px;
+ }
+
+ .add{
+     p{
+        font-size: 13px !important;
+        margin-top: 5px;
+    }
+}
+
+ .x-fafa{
+    margin-left: -2px;
+ }
+.mk{
+    margin-left: -70px;
+}
+ .seemore:hover .x-glo{
+    display: flex;
+ }
+ .seemore:hover .card-link{
+  display: none;
+ }
+
+ .tct{
+     p{
+         margin-left: 10px;
+         padding: 10px;
+     }
+ }
+}
+
+
+
+    @media(max-width:1277px){
+
+       .flx{
+    overflow-x: visible;
+    left: -30%;
+    div{
+        max-width: 34%;
+    }
+       }
+
+       .x-carone{
+          width:150%; 
+          left:-40%;
+       }
+
+       .crearoom{
+        width:150%; 
+        left:-40%;
+        .roomimage{
+            overflow-x: scroll;
+        }
+       }
+
+       .lem{
+        width:150% !important; 
+        left:-40% !important;
+       }
+
+        }
+
+        @media(max-width:1020px){
+            .x-tab .nav{
+                left: 14%;
+            }
+        }
+
+        @media(max-width:936px){
+          
+
+            .dont{
+                display: flex;
+                width: 100%;
+                margin-top: -20px;
+                margin-left: -50px !important;
+                .nav-link{
+                    margin-left: 5px !important;
+                    margin-bottom: 10px !important;
+                }
+            }
+            }
+
+
+            @media(max-width:910px){
+
+
+.x-fa{
+    .xna{
+        .nav-link{
+           margin-left: 10px !important;
+        }
+    }
+}
+            }
+
+
+   @media(max-width:575px){
+       .mell{
+           margin-top: 10px;
+           margin-left: -150px;
+
+           .kill{
+               display: none;
+           }
+       }
+       .mell:focus-within .kill{
+           display: flex;
+       }
+    .cpane{
+        left: 0%;
+    }
+
+    .flx{
+        overflow-x: scroll;
+        left: 3%;
+           }
+
+           .x-carone{
+            width:100%; 
+            left: 0%;  
+           }
+
+           .crearoom{
+            width:100%; 
+            left:0%;
+            .roomimage{
+                overflow-x: scroll;
+            }
+           }
+    
+           .lem{
+            width:100% !important; 
+            left:0% !important;
+           }
+
+           .mike{
+               margin-left: 50%;
+           }
+
+           .action2{
+               overflow-y: scroll !important;
+               height: 600px !important;
+           }
+    } 
+
+    @media(max-width:540px){
+        .mell:focus-within .kill{
+            display: flex;
+            left: 50px !important;
+        }
+    }
+
+    @media(max-width:525px){
+        .mell{
+      margin-left: 2px !important;
+        }
+    }
+
+    @media(max-width:484px){
+        .x-bod p{
+            margin-left: 0px;
+        
+        }
+
+        .mike{
+            margin-left: 30%;
+        }
+    }
+    @media(max-width:414px){
+        .mell:focus-within .kill{
+            display: flex;
+            left: -80px !important;
+        }
+    }
+
+    @media(max-width:382px){
+        .mell{
+      margin-left: -30px !important;
+        }
+    }
+
+    @media(max-width:375px){
+        .mell:focus-within .kill{
+            display: flex;
+            left: -120px !important;
+        }  
+    }
+
+    @media(max-width:360px){
+    .mell:focus-within .kill{
+        display: flex;
+        left: -125px !important;
+    }
+}
+
+    
+
+
+
+

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Mobilephone.css">
+    <title>MObile Phone</title>
+</head>
+
+<body>
+    <main class="container-fluid">
+        <main class="row">
+            <main class="col-sm">
+                <div class="d-flex">
+                    <div class="phoneBody">
+                        <div class="camlight d-flex">
+                            <div class="cam">
+                                <div class="caminner"> </div>
+                            </div>
+                            <div class="light" id="frontlight">
+                                <div class="lightinner"></div>
+                            </div>
+                            <div id="list" hidden>
+                                <div class="icons d-flex">
+                                    <div class="barS1 d-flex">
+                                        <div id="N11"></div>
+                                        <div id="N12"></div>
+                                        <div id="N13"></div>
+                                        <div id="N14"></div>
+                                    </div>
+                                    <div class="barS2 d-flex" id="sim2">
+                                        <div id="N21"></div>
+                                        <div id="N22"></div>
+                                        <div id="N23"></div>
+                                        <div id="N24"></div>
+                                    </div>
+                                    <div class="ba3 d-flex">
+                                        <div class="enter" id="ba3cell"></div>
+                                        <div id="cell">100</div>
+                                    </div>
+                                    <div id="time"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Pbutton">
+                            <div class="volumeup" id="volumeup"></div>
+                            <div class="volumedown" id="volumedown"></div>
+                            <div class="lock" id="power"></div>
+                        </div>
+                        <div class="screen">
+                            <div id="recharge" hidden>
+                                <div class="d-flex">
+                                    <p class="spinner-border text-primary"></p>
+                                    <p class="pl-2">Please wait...</p>
+                                </div>
+                                <div id="okay"></div>
+                            </div>
+                            <div id="sicall" hidden>
+                                <label for="">Call with</label>
+                                <div class="sim1">
+                                    <div class="d-flex" id="callone">
+                                        <p class="tag bg-success">1</p>
+                                        <p id="simname1">MTN NG</p>
+                                    </div>
+                                    <p id="number">08167302289</p>
+                                </div>
+                                <div class="sim2">
+                                    <div class="d-flex" id="calltwo">
+                                        <p class="tag bg-primary">2</p>
+                                        <p id="simname2">GLO NG</p>
+                                    </div>
+                                    <p id="number">
+                                        09150692490
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div id="keypadword" style="overflow-x: hidden;" hidden>
+                                <div style="margin-top: -10px;">
+                                    <button>1</button>
+                                    <button>2</button>
+                                    <button>3</button>
+                                    <button>4</button>
+                                    <button>5</button>
+                                    <button>6</button>
+                                    <button>7</button>
+                                    <button>8</button>
+                                    <button>9</button>
+                                    <button>*</button>
+                                    <button>0</button>
+                                    <button>#</button>
+                                    <button>A</button>
+                                    <button>B</button>
+                                    <button>C</button>
+                                    <button>D</button>
+                                    <button>E</button>
+                                    <button>F</button>
+                                    <button>G</button>
+                                    <button>H</button>
+                                    <button>I</button>
+                                    <button>J</button>
+                                    <button>K</button>
+                                    <button>L</button>
+                                    <button>M</button>
+                                    <button>N</button>
+                                    <button>O</button>
+                                    <button>P</button>
+                                    <button>Q</button>
+                                    <button>R</button>
+                                    <button>S</button>
+                                    <button>T</button>
+                                    <button>U</button>
+                                    <button>V</button>
+                                    <button>w</button>
+                                    <button>X</button>
+                                    <button>Y</button>
+                                    <button>Z</button>
+                                    <button>,</button>
+                                    <button>.</button>
+                                    <button>?</button>
+                                    <button>!</button>
+                                    <button>/</button>
+                                    <button>(</button>
+                                    <button>)</button>
+                                    <div onclick="space()"
+                                        style="position: absolute; margin-left: 73%; margin-top: 8px; font-size: 20px;">
+                                        SPACE</div>
+                                    <div><i class="fa fa-close ml-3 mt-3" id="delete" onclick="deleteWord()"></i>
+                                    </div>
+                                    <div style="margin-top:-25px; font-size: 20px; margin-left: 40px;position: absolute !important;"
+                                        onclick="caplock()" id="caplock">CAPLOCK</div>
+                                </div>
+                            </div>
+                            <div id="keypad" style="overflow-x: hidden;" hidden>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <input
+                                            style="font-size: 20px; overflow-x: scroll; width: 250px; text-align: right;"
+                                            class="pl-3" id="callplate">
+                                    </div>
+                                    <div><i class="fa fa-close mr-5 mt-3" id="delete" onclick="deleteNumber()"></i>
+                                    </div>
+                                </div>
+
+                                <div style="margin-top: -10px;">
+                                    <button>1</button>
+                                    <button>2</button>
+                                    <button>3</button>
+                                    <button>4</button>
+                                    <button>5</button>
+                                    <button>6</button>
+                                    <button>7</button>
+                                    <button>8</button>
+                                    <button>9</button>
+                                    <button>*</button>
+                                    <button>0</button>
+                                    <button>#</button>
+                                </div>
+                            </div>
+                            <div class="bg-dark volume" id="phoneVol" hidden>
+                                <div class="level">
+                                    <div class="volumec" id="volumemove"></div>
+                                </div>
+                            </div>
+                            <div id="makingcall" hidden>
+                                <div class="callhead bg-primary p-2 pt-4">
+                                    <div class="usercall"><i class="fa fa-user"></i></div>
+                                    <div class="mt-3 text-white">
+                                        <p id="contactname" style="font-size: 24px;">Teacher</p>
+                                        <p id="contactno" style="font-size: 14px;">Mobile 08130585248</p>
+                                        <p id="contactline" style="font-size: 14px;"></p>
+                                    </div>
+                                </div>
+                                <div class="callicon text-black">
+                                    <div class="callduration d-flex">
+                                        <p id="callDur" class="text-danger" style="font-weight: bold;" hidden>0:00</p>
+                                    </div>
+                                    <div class="lisico">
+                                        <i class="fa fa-volume-up" style="font-size: 20px; margin-bottom: 50px;"></i>
+                                        <i class="fa fa-microphone-slash"
+                                            style="font-size: 20px;margin-left: 30px;"></i>
+                                        <i class="fa fa-pause" style="font-size: 20px; margin-left: 30px;"></i>
+                                        <i class="fa fa-cc" style="font-size: 20px; margin-left: 50px;"></i>
+                                        <i class="fa fa-th" style="font-size: 20px; margin-left: 0px;"></i>
+                                        <div class="callred" id="callhang" onclick="hang()">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="d-flex">
+                                            <i class="fa fa-phone" style="font-size: 20px;"></i>
+                                            <i class="fa fa-plus" style="font-size: 10px; margin-left: -8px;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="messageHome" hidden>
+                                <div class="bg-primary contH p-2 pt-5 d-flex justify-content-between text-white"
+                                    id="contactinfoH">
+                                    <div>Messages</div>
+                                    <div class="d-flex" style="margin-top: 3px;">
+                                        <i class="fa fa-comment-o pr-4" onclick="NewmessagePage()"><i
+                                                class="fa fa-plus-circle fapluss"></i></i>
+                                        <i class="fa fa-search pr-4" style="margin-top: 2px;"></i>
+                                        <div style="margin-top: -2px;"><i class="fa fa-ellipsis-v"></i></div>
+                                    </div>
+                                </div>
+                                <div id="messageinfo">
+                                </div>
+                            </div>
+
+                            <div id="messagetype" hidden>
+                                <div class="bg-primary contH p-2 pt-5 d-flex justify-content-between text-white"
+                                    id="contactinfoH">
+                                    <div id="messageName">Name</div>
+                                    <div class="d-flex" style="margin-top: 3px;">
+                                        <i class="fa fa-user-o pr-4" id="removeUser"></i>
+                                        <i class="fa fa-phone pr-4" style="margin-top: 2px;" id="removeUser1"></i>
+                                        <div style="margin-top: -2px;"><i class="fa fa-ellipsis-v"></i></div>
+                                    </div>
+                                </div>
+                                <div id="messageTyinfo" style="color: black;">
+                                    <div><input type="text" class="form-group form-control-lg" placeholder="Enter Number" id="newmessage" hidden onclick="messagenew()" oninput="messagecontact()"></div>
+                                    <div id="displaymes"></div>
+                                    <div id="Isentit"></div>
+                                    <div class="d-flex justify-content-between bg-primary messageButtom"
+                                        id="messageButtom">
+                                        <i class="fa fa-plus-circle text-white mt-3 ml-1"></i>
+                                        <textarea name="" class="ml-1" id="messageMy" cols="30" rows="10"></textarea>
+                                        <p class="placeholder" id="mMyplaceholder">Type your message</p>
+                                        <i class="fa fa-telegram ml-1 mt-3 text-white" id="sendMessage"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="newmessagetype" hidden>
+                                <div class="bg-primary contH p-2 pt-5 d-flex justify-content-between text-white"
+                                    id="contactinfoH">
+                                    <div id="messageName">New message</div>
+                                    <div class="d-flex" style="margin-top: 3px;">
+                                        <div style="margin-top: -2px;"><i class="fa fa-ellipsis-v"></i></div>
+                                    </div>
+                                </div>
+                                <div id="messageTyinfo" style="color: black;">
+                                    <div id="typenumHolder"><input type="text" placeholder="Type number or name"
+                                            class="form-group-lg" style="width: 90%" id="typenumber"></div>
+                                    <div id="displaymes"></div>
+                                    <div id="Isentit"></div>
+                                    <div class="d-flex justify-content-between bg-primary"
+                                        id="newmessagebtn">
+                                        <i class="fa fa-plus-circle text-white mt-3 ml-1"></i>
+                                        <textarea name="" class="ml-1" id="newmessageMy" cols="30" rows="10"></textarea>
+                                        <p class="placeholder" id="newplaceholder">Type your message</p>
+                                        <i class="fa fa-telegram ml-1 mt-3 text-white" id="newsendMessage"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div id="contactinfoB" hidden>
+                                <div class="bg-primary contH p-2 pt-5 d-flex justify-content-between text-white"
+                                    id="contactinfoH">
+                                    <i class="fa fa-user biguser"></i>
+                                </div>
+                                <div id="Editme" hidden>
+                                    <input type="text" class="form-group form-control form-control-lg w-75 ml-4" style="height: 25px;" id="editname" placeholder="Enter Name" onclick="editContnam()">
+                                    <input type="text" class="form-group form-control form-control-lg w-75 ml-4" style="height: 25px;" id="editnumber" placeholder="Enter Number" onclick='editContnum()'>
+                                </div>
+                                <div id="contactinfo">
+                                </div>
+                            </div>
+
+                            <div id="callinfoB" hidden>
+                                <div class="header bg-primary p-2 pt-5 callinfo d-flex justify-content-between text-white"
+                                    id="callinfoH" hidden>
+
+                                </div>
+                                <div id="callinfo">
+
+                                </div>
+                            </div>
+                            <div id="contactlist" hidden>
+                                <div class="header bg-primary p-2 pt-4">
+                                    <div class="d-flex justify-content-between sear">
+                                        <div class="d-flex pl-3">
+                                            <i class="fa fa-search pt-2"></i>
+                                            <input type="text" placeholder="Search" class="pt-1">
+                                        </div>
+                                        <div><i class="fa fa-ellipsis-v pt-2 pr-4"></i></div>
+                                    </div>
+                                    <div class="nav justify-content-between text-white pt-1">
+                                        <button id="phonelist" onclick="phlist()">Phone</button>
+                                        <button id="contactslist" onclick="colist()">Contacts</button>
+                                        <button id="favlist" onclick="fvlist()">Favourites</button>
+                                        <div id="line"></div>
+                                    </div>
+                                </div>
+                                <div id="contact">
+                                    <div id="contactdown">
+
+                                    </div>
+                                </div>
+                                <div id="callsusp" onclick="call()"><i class="fa fa-th"></i></div>
+                                <div id="call1susp" hidden><i class="fa fa-phone" onclick="callme()"></i></div>
+                                <div id="contactsusp" hidden><i class="fa fa-plus" onclick="Addnewcontact()"></i></div>
+                            </div>
+                            <div id="startt" class="text-primary"
+                                style="font-weight: bolder; font-size: 40px; text-align: center; margin-top: 200px;">
+
+                            </div>
+                            <div hidden id="start">
+                                <div class="d-flex">
+                                    <div class="spinner-border text-primary"></div>
+                                    <p class="text-primary m-2">WELCOME, WAIT A WHILE...</p>
+                                </div>
+                            </div>
+                            <div hidden id="stop">
+                                <div class="d-flex">
+                                    <div class="spinner-border text-primary"></div>
+                                    <p class="text-primary m-2">DEAR, STAY STRONG. BYE...</p>
+                                </div>
+                            </div>
+                            <div id="offit" hidden>
+                                <div class="d-flex" id="poff" onclick="poweroff()"><i
+                                        class="fa fa-power-off text-danger"></i>
+                                    <p>Power Off</p>
+                                </div>
+                                <div class="d-flex" id="restart" onclick="restat()"><i
+                                        class="fa fa-refresh text-success"></i>
+                                    <p>Restart</p>
+                                </div>
+                            </div>
+                            <div id="facebok" hidden>
+                            <iframe src="newfacebook.html" frameborder="0" width="100%" height="450px"></iframe>
+                            </div>
+                            <div id="minim" hidden>!</div>
+                            <div id="faint" hidden></div>
+                            <div id="Menu" class="pt-5" hidden>
+                                <div class="d-flex">
+                                    <i class="fa fa-facebook text-primary" onclick="facebook()"></i>
+                                    <i class="fa fa-whatsapp text-success"></i>
+                                    <i class="fa fa-photo text-white bg-warning"></i>
+                                    <i class="fa fa-camera"></i>
+                                    <i class="fa fa-instagram text-danger"></i>
+                                    <i class="fa fa-twitter text-primary"></i>
+                                    <i class="fa fa-music text-white bg-danger"></i>
+                                    <i class="fa fa-phone text-white bg-primary" onclick="callsr()"></i>
+                                    <i class="fa fa-play text-white bg-danger"></i>
+                                    <i class="fa fa-google text-danger"></i>
+                                    <i class="fa fa-play text-white bg-primary"></i>
+                                    <i class="fa fa-google-plus text-danger"></i>
+                                    <i class="fa fa-microphone text-danger"></i>
+                                    <i class="fa fa-user text-white bg-success" onclick="colist()"></i>
+                                    <i class="fa fa-firefox text-danger"></i>
+                                    <i class="fa fa-edge text-success"></i>
+                                    <i class="fa fa-opera bg-danger text-white"></i>
+                                    <i class="fa fa-share-alt bg-warning text-white"></i>
+                                </div>
+                            </div>
+                            <div id="homescreen" hidden>
+                                <img src="wallpaper.jpg" class="wallpaper">
+                                <div id="Sleepmenu">
+                                    <div class="d-flex menu">
+                                        <i class="fa fa-phone text-primary" id="callscree" onclick="callsr()"></i>
+                                        <i class="fa fa-navicon text-dark" onclick="menu()"></i>
+                                        <i class="fa fa-commenting-o" onclick="messageHo()"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="homescreen1" hidden>
+                                <img src="./wallpaper.jpg" class="wallpaper">
+                                <div class="d-flex menu">
+
+                                </div>
+                            </div>
+                            <div id="password" hidden>
+                            <div  class="ml-5 d-flex"><input type="text" placeholder="Enter your Pin or Password" id="passcode"><div id="accesspass" onclick="UnlockPhone()">Okay</div></div>
+                        </div>
+                            <div class="ssaver" id="screensaver" hidden onclick="unlock()">
+                                <img src="./eben.jpg" class="screensaver">
+                                <div id="ssText">
+                                <div class="slide">TOUCH ME OR USE FINGER PRINT</div>
+                                <div id="fullday"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <div id="menubts" hidden>
+                            <div id="control" class="text-white d-flex justify-content-between">
+                                <li class="fa fa-clone" onclick="minimize()"></li>
+                                <li class="fa fa-home" id="home" onclick=" always_screen()"></li>
+                                <li class="fa fa-mail-reply" id="back" onclick="back()"></li>
+                            </div>
+                        </div>
+                        <div class="finger" id="finger" onclick="fingerl()" hidden>
+                            <div class="line"></div>
+                            <div class="line2"></div>
+                        </div>
+                    </div>
+
+                    <div class="phoneBack">
+                        <div class="camback">
+                            <div class="camback1" id="camback1">
+                                <div class="lightback"></div>
+                            </div>
+                            <div class="camback2" id="camback2">
+                                <div class="lightback"></div>
+                            </div>
+                        </div>
+                        <div class="label text-black" id="label">
+                        </div>
+                    </div>
+                    <div class="bob bg-primary">
+                        <button class="btn-white btn-lg w-100" id="itoff" onclick="itisoff()">Switched Off</button>
+                        <button class="btn-white btn-lg w-100" id="busy">Busy</button>
+                        <button class="btn-white btn-lg w-100" id="unreach">Not reachable</button>
+                    </div>
+                </div>
+
+
+            </main>
+        </main>
+    </main>
+
+
+    <script src="./Mobilephone.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+.container-fluid, .row, .col-sm {
+  padding: 0px;
+  margin: 0px;
+}
+
+.col-sm-6 {
+  margin-top: 100px;
+  padding: 40px;
+}
+
+.container-fluid {
+  outline: none;
+  border: 0px;
+}
+
+.x-card {
+  outline: none;
+  border: 0px;
+  text-align: center;
+}
+
+.text-primary {
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: -10px;
+  margin-left: -50px;
+  background-color: transparent;
+}
+
+.card {
+  background-color: transparent;
+}
+
+.date {
+  width: 100%;
+}
+
+span {
+  font-size: 30px;
+  width: 500px;
+  display: flex;
+  padding-left: 50px;
+}
+
+.log {
+  margin-left: -50px;
+  background-color: white;
+}
+
+.x-option {
+  display: none !important;
+}
+
+@media (max-width: 1209px) {
+  span {
+    max-width: 400px;
+  }
+}
+@media (max-width: 962px) {
+  span {
+    max-width: 300px;
+    padding-left: 0px !important;
+  }
+}
+@media (max-width: 829px) {
+  span {
+    max-width: 250px;
+    padding-left: 20px !important;
+  }
+}
+@media (max-width: 700px) {
+  span {
+    display: none;
+  }
+
+  .col-sm-6 {
+    margin-top: 0px;
+    padding: 40px;
+  }
+
+  .log {
+    background-color: transparent;
+    border: 0px;
+    margin-left: 0px;
+  }
+}
+
+/*# sourceMappingURL=newfacebook.css.map */
